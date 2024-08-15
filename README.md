@@ -9,10 +9,15 @@ After executing the above commands, two docker containers will be created.
 **Below are the endpoints to access the api.**
 
 [Post] http://localhost:8080/api/auth/login
+
 [Get] http://localhost:8080/api/Product
+
 [Put] http://localhost:8080/api/Product
+
 [Get] http://localhost:8080/api/Product/GetProductsByColour?colour=Blue
+
 [Del] http://localhost:8080/api/Product?id=4
+
 
 **Current Architecture**
 
