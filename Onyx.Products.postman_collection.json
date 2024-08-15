@@ -1,0 +1,219 @@
+{
+	"info": {
+		"_postman_id": "d0956df9-c91f-48a5-a3b1-04db136726d3",
+		"name": "Onyx.Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20215710"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/auth/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Username\": \"Onyxuser\",\r\n    \"Password\": \"OnyxPassw0rd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/Product/GetProductsByColour?colour=Blue",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJPbnl4dXNlciIsIm5iZiI6MTcyMzc1NDMxMCwiZXhwIjoxNzIzNzU3OTEwLCJpYXQiOjE3MjM3NTQzMTAsImlzcyI6Ik9ueXhQcm9kdWN0SXNzdWVyIiwiYXVkIjoiT255eFByb2R1Y3RBdWRpZW5jZSJ9._r_UOHJD32Rwrf9uV2rEGmnlb0sCUWbSX8OYKcLwVOU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/Product/GetProductsByColour?colour=Blue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Product",
+						"GetProductsByColour"
+					],
+					"query": [
+						{
+							"key": "colour",
+							"value": "Blue"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/Product",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJPbnl4dXNlciIsIm5iZiI6MTcyMzc1NDMxMCwiZXhwIjoxNzIzNzU3OTEwLCJpYXQiOjE3MjM3NTQzMTAsImlzcyI6Ik9ueXhQcm9kdWN0SXNzdWVyIiwiYXVkIjoiT255eFByb2R1Y3RBdWRpZW5jZSJ9._r_UOHJD32Rwrf9uV2rEGmnlb0sCUWbSX8OYKcLwVOU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Iphone 25S\",\r\n    \"model\": {\"ModelName\": \"Iphone 25S Max\"},\r\n    \"price\": {\"Amount\": 1999.99},\r\n    \"colour\":{\"colourName\": \"Red\" }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/Product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/Product?id=4",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJPbnl4dXNlciIsIm5iZiI6MTcyMzc1NDMxMCwiZXhwIjoxNzIzNzU3OTEwLCJpYXQiOjE3MjM3NTQzMTAsImlzcyI6Ik9ueXhQcm9kdWN0SXNzdWVyIiwiYXVkIjoiT255eFByb2R1Y3RBdWRpZW5jZSJ9._r_UOHJD32Rwrf9uV2rEGmnlb0sCUWbSX8OYKcLwVOU",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/Product?id=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Product"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/Product",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJPbnl4dXNlciIsIm5iZiI6MTcyMzc1MDA4OCwiZXhwIjoxNzIzNzUzNjg4LCJpYXQiOjE3MjM3NTAwODgsImlzcyI6Ik9ueXhQcm9kdWN0SXNzdWVyIiwiYXVkIjoiT255eFByb2R1Y3RBdWRpZW5jZSJ9.8ebGV2L4NPklyNA6cBNY4vVCg5GBYjm65s3JrTBlluY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/Product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"Product"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
