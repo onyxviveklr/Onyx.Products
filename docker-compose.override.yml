@@ -1,0 +1,4 @@
+services:
+  products-api:
+    ports:
+      - "8080:80"  # or any port you prefer

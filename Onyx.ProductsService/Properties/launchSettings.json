@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Onyx.ProductsService": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}

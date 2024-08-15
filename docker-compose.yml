@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      SA_PASSWORD: "Onyx2Sqlserver£pwd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    networks:
+      - products-network
+
+  products-api:
+    image: productsapi
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - sqlserver
+    networks:
+      - products-network
+
+networks:
+  products-network:
+    driver: bridge
