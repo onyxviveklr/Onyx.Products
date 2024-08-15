@@ -7,6 +7,9 @@ docker-compose up
 After executing the above commands, two docker containers will be created.
 ![image](https://github.com/user-attachments/assets/00abeab3-e153-4093-9daa-d1da42358a59)
 
+**Please find the postman collection here.**
+https://github.com/onyxviveklr/Onyx.Products/blob/master/Onyx.Products.postman_collection.json
+
 **Below are the endpoints to access the api.**
 
 [Post] http://localhost:8080/api/auth/login
